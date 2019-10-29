@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40C551BD-B20C-4EDE-A6F9-8C3B5CB120D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MiasSandwhiches</RootNamespace>
+    <AssemblyName>MiasSandwhiches</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonEllipse.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Filling.cs" />
+    <Compile Include="FrmAddProductCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddProductCategories.Designer.cs">
+      <DependentUpon>FrmAddProductCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddStock.Designer.cs">
+      <DependentUpon>FrmAddStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBase.Designer.cs">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBaseSandwichChoices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaseSandwichChoices.Designer.cs">
+      <DependentUpon>FrmBaseSandwichChoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBaseStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaseStock.Designer.cs">
+      <DependentUpon>FrmBaseStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheckout.Designer.cs">
+      <DependentUpon>FrmCheckout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChooseBread.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChooseBread.Designer.cs">
+      <DependentUpon>FrmChooseBread.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChooseFilling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChooseFilling.Designer.cs">
+      <DependentUpon>FrmChooseFilling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChooseSalad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChooseSalad.Designer.cs">
+      <DependentUpon>FrmChooseSalad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChooseSauce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChooseSauce.Designer.cs">
+      <DependentUpon>FrmChooseSauce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChooseSpread.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChooseSpread.Designer.cs">
+      <DependentUpon>FrmChooseSpread.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfirmSandwich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfirmSandwich.Designer.cs">
+      <DependentUpon>FrmConfirmSandwich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditStock.Designer.cs">
+      <DependentUpon>FrmEditStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRecipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecipt.Designer.cs">
+      <DependentUpon>FrmRecipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaffMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaffMenu.Designer.cs">
+      <DependentUpon>FrmStaffMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStoreLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStoreLogin.Designer.cs">
+      <DependentUpon>FrmStoreLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewStockCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewStockCategories.Designer.cs">
+      <DependentUpon>FrmViewStockCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderProcess.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salad.cs" />
+    <Compile Include="Sandwich.cs" />
+    <Compile Include="Stock.cs" />
+    <Compile Include="StockCategory.cs" />
+    <Compile Include="Storage.cs" />
+    <EmbeddedResource Include="FrmAddProductCategories.resx">
+      <DependentUpon>FrmAddProductCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddStock.resx">
+      <DependentUpon>FrmAddStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBase.resx">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaseSandwichChoices.resx">
+      <DependentUpon>FrmBaseSandwichChoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaseStock.resx">
+      <DependentUpon>FrmBaseStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheckout.resx">
+      <DependentUpon>FrmCheckout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChooseBread.resx">
+      <DependentUpon>FrmChooseBread.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChooseFilling.resx">
+      <DependentUpon>FrmChooseFilling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChooseSalad.resx">
+      <DependentUpon>FrmChooseSalad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChooseSauce.resx">
+      <DependentUpon>FrmChooseSauce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChooseSpread.resx">
+      <DependentUpon>FrmChooseSpread.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfirmSandwich.resx">
+      <DependentUpon>FrmConfirmSandwich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditStock.resx">
+      <DependentUpon>FrmEditStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecipt.resx">
+      <DependentUpon>FrmRecipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaffMenu.resx">
+      <DependentUpon>FrmStaffMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStoreLogin.resx">
+      <DependentUpon>FrmStoreLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewStockCategories.resx">
+      <DependentUpon>FrmViewStockCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add to cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnContinue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnOk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShoppingCart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FrmBackgrounMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Click Here To Load Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bap sandwhich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filledBaguette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filledBap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filledChiabatta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filledPanini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filledSliced.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
